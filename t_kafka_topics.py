@@ -34,7 +34,7 @@ except Exception as e:
 
 # Getting the list of existing topics
 for topic in admin_client.list_topics():
-  if my_name in topic:
+  if 'YT_' in topic:
     print(topic)
 
 admin_client.close()
